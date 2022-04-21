@@ -1,0 +1,30 @@
+page {
+  background-color: #b3d4db;
+}
+
+.container {
+  background-color: #b3d4db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container image {
+  width: 200rpx;
+  height: 200rpx;
+  margin:200rpx 0 100rpx 0;
+}
+
+.text {
+  margin-bottom: 100rpx;
+}
+
+.journey {
+  font-size: 22rpx;
+  border: 1rpx solid #405f80;
+  padding: 20rpx;
+  border-radius: 6rpx;
+}
+.l-avatar {
+  margin:200rpx 0 100rpx 0;
+}

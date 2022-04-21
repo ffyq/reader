@@ -1,0 +1,21 @@
+<view>
+  <!-- 轮播图 -->
+  <swiper interval="3000" circular vertical="{{false}}" indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="rgba(255, 255, 255,.5)">
+    <swiper-item>
+      <image src="../../images/bestplayers.png" data-post-id="3" bind:tap="goDetail"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/lpl.png" data-post-id="0" bind:tap="goDetail"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/jumpfly.png" data-post-id="4" bind:tap="goDetail"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 文章列表 -->
+  <block wx:for="{{postList}}" wx:key="postId">
+
+    <post bind:posttap = "goDetail" res="{{item}}"/>
+
+  </block>
+  
+</view>
